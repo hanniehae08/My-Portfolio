@@ -1,0 +1,508 @@
+
+/* =========================================
+   HANA'S CREATIVE PORTFOLIO
+   Editorial Lavender Design
+   ========================================= */
+
+/* 1. FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+/* 2. COLORS */
+:root {
+    --lavender: #8D6BE8;
+    --deep-purple: #6945C6;
+    --soft-lavender: #F5F0FF;
+    --light-purple: #E9DEFF;
+    --blush: #F2A9D8;
+    --dark: #28223A;
+    --muted: #746D83;
+    --white: #FFFFFF;
+}
+
+
+/* 3. RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* 4. STICKY NAVIGATION */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 16px 6%;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid #E9E2F5;
+}
+
+nav {
+    max-width: 1400px;
+    min-height: 54px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.logo span {
+    color: var(--lavender);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 11px 19px;
+    border-radius: 50px;
+    color: var(--dark);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a[href="#home"] {
+    color: var(--white);
+    background: var(--deep-purple);
+}
+
+
+/* 5. HERO BACKGROUND */
+.hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    width: calc(100% - 48px);
+    max-width: 1500px;
+    min-height: 740px;
+    margin: 24px auto;
+    border-radius: 30px;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            #F5EEFF 0%,
+            #E8DCFF 34%,
+            transparent 68%
+        ),
+        linear-gradient(
+            125deg,
+            #7056a1,
+            #F5F0FF 55%,
+            #C6ADF8
+        );
+}
+
+
+/* 6. OVERSIZED NAME */
+   
+/* Split the oversized name around the center portrait */
+.hero-name {
+    position: absolute;
+    z-index: 3;
+    top: 35px;
+    left: 3%;
+    width: 94%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.06em;
+
+    color: #fff;
+    text-shadow: 0 3px 18px rgba(105, 69, 198, 0.12);
+}
+
+.name-first {
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.name-last {
+    display: block;
+    text-align: right;
+    white-space: nowrap;
+}
+
+}
+
+
+.hero-name span {
+    position: relative;
+    z-index: 3;
+    white-space: nowrap;
+}
+
+.name-first {
+    text-align: left;
+}
+
+.name-middle {
+    text-align: center;
+}
+
+.name-last {
+    text-align: right;
+}
+
+}
+
+
+/* 7. DECORATIVE CIRCLES */
+.hero-orbit {
+    position: absolute;
+    z-index: 0;
+    width: min(56vw, 620px);
+    aspect-ratio: 1;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(105, 69, 198, 0.2);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 0 0 24px rgba(255, 255, 255, 0.12),
+        0 0 0 50px rgba(141, 107, 232, 0.08);
+}
+
+
+/* 8. CENTER PORTRAIT */
+.hero-portrait {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    width: min(62%, 850px);
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+.hero-portrait img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    border: none;
+    border-radius: 0;
+
+    filter: drop-shadow(
+        0 12px 20px rgba(70, 40, 120, 0.12)
+    );
+}
+
+
+/* 9. LEFT INTRODUCTION */
+.hero-left {
+    position: absolute;
+    z-index: 4;
+    left: 3%;
+    bottom: 30%;
+    width: 27%;
+}
+
+.hero-label {
+    margin-bottom: 14px;
+    color: var(--deep-purple);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.hero-description {
+    margin-bottom: 18px;
+    color: #55496A;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+
+/* 10. SOCIAL LINKS */
+.social-links {
+    display: flex;
+    gap: 9px;
+}
+
+.social-links a {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--deep-purple);
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.social-links a:hover {
+    background: #5230AC;
+    transform: translateY(-3px);
+}
+
+
+/* 11. RIGHT HEADLINE */
+.hero-right {
+    position: absolute;
+    z-index: 4;
+    right: 3%;
+    bottom: 9%;
+    width: 25%;
+}
+
+.hero-right h2 {
+    margin-bottom: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--deep-purple);
+    font-size: clamp(1.8rem, 3vw, 3.2rem);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+}
+
+.hero-right p {
+    margin-bottom: 16px;
+    color: #55496A;
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+.hero-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 9px 8px 19px;
+    border-radius: 50px;
+    background: var(--deep-purple);
+    color: var(--white);
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero-contact:hover {
+    background: #5230AC;
+    transform: translateY(-2px);
+}
+
+.hero-contact span {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--deep-purple);
+}
+
+
+/* 12. KEYBOARD ACCESSIBILITY */
+a:focus-visible {
+    outline: 3px solid var(--lavender);
+    outline-offset: 4px;
+}
+
+
+/* 13. TABLET LAYOUT */
+@media (max-width: 1000px) {
+    header {
+        padding-inline: 4%;
+    }
+
+    .nav-links a {
+        padding: 10px 12px;
+        font-size: 0.82rem;
+    }
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .hero-name {
+        top: 35px;
+        font-size: clamp(3.5rem, 8.5vw, 6rem);
+    }
+
+    .hero-portrait {
+        width: 62%;
+        height: 88%;
+    }
+
+    .hero-left {
+        left: 3%;
+        bottom: 8%;
+        width: 35%;
+    }
+
+    .hero-right {
+        right: 3%;
+        bottom: 8%;
+        width: 32%;
+    }
+
+    .hero-right h2 {
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+    }
+}
+
+
+/* 14. MOBILE NAVIGATION */
+@media (max-width: 700px) {
+    header {
+        padding: 12px 5%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 1.7rem;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+
+    .nav-links a {
+        padding: 8px 11px;
+        font-size: 0.78rem;
+    }
+}
+
+
+/* 15. MOBILE HERO */
+@media (max-width: 600px) {
+    .hero {
+        width: calc(100% - 24px);
+        min-height: 920px;
+        margin: 12px auto;
+        border-radius: 22px;
+    }
+
+    .hero-name {
+        top: 28px;
+        left: 5%;
+        width: 90%;
+        font-size: clamp(3rem, 12vw, 4.5rem);
+        line-height: 0.98;
+        letter-spacing: -0.06em;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-orbit {
+        top: 34%;
+        width: 85%;
+    }
+
+    .hero-portrait {
+        top: 12%;
+        bottom: auto;
+        width: 88%;
+        height: 43%;
+    }
+
+    .hero-left {
+        left: 7%;
+        bottom: 24%;
+        width: 86%;
+    }
+
+    .hero-label {
+        font-size: 0.65rem;
+    }
+
+    .hero-description {
+        font-size: 0.85rem;
+    }
+
+    .hero-right {
+        left: 7%;
+        right: auto;
+        bottom: 5%;
+        width: 86%;
+    }
+
+    .hero-right h2 {
+        font-size: 2rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-right p {
+        font-size: 0.82rem;
+    }
+}
+
+
+/* 16. REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

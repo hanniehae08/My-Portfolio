@@ -492,6 +492,7 @@ a:focus-visible {
 }
 
 
+
 /* 16. REDUCED MOTION */
 @media (prefers-reduced-motion: reduce) {
     html {
@@ -502,8 +503,11 @@ a:focus-visible {
     *::before,
     *::after {
         transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
 
-      
 /* =================================
    ABOUT SECTION
 ================================= */
@@ -623,7 +627,6 @@ a:focus-visible {
 }
 
 /* MOBILE RESPONSIVENESS */
-
 @media (max-width: 768px) {
     .about-section {
         padding: 75px 6%;
@@ -639,10 +642,5 @@ a:focus-visible {
 
     .about-heading h2 {
         letter-spacing: -1.5px;
-    }
-}
-
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
     }
 }

@@ -7,6 +7,21 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
+<div class="image-lightbox" id="imageLightbox"
+     onclick="closeImage()">
+
+    <span class="lightbox-close">&times;</span>
+
+    <img id="lightboxImage" src="" alt="Expanded project screenshot">
+</div>
+
+<!-- MULTIMEDIA IMAGE LIGHTBOX -->
+<div id="multimediaLightbox" class="multimedia-lightbox">
+    <span class="multimedia-close">&times;</span>
+    <img id="multimediaLightboxImage" src="" alt="Expanded multimedia artwork">
+</div>
+
 <body>
 
     <!-- Navigation -->
@@ -42,7 +57,7 @@
     <!-- Artistic portrait -->
     <div class="hero-portrait">
         
-<img src="profile-cutout.png"
+<img src="images/profile-cutout.png"
      alt="Illustrated portrait of Hannah Marie Pajares">
 
 
@@ -74,48 +89,183 @@
         </a>
     </div>
 
+
 </section>
 
+<!-- ABOUT SECTION -->
 
 <!-- ABOUT SECTION -->
 <section id="about" class="about-section">
 
     <div class="about-heading">
-        <p class="section-label">GET TO KNOW ME</p>
-        <h2>A little about <span>me.</span></h2>
+        <p class="section-label">A LITTLE MORE ABOUT ME</p>
+        <h2>Still discovering.<br><span>Always becoming.</span></h2>
         <p class="about-subtitle">
-            Beyond the screen, here's a little story about who I am,
-            what I study, and what inspires me.
+            A little story about my journey, the things I love,
+            and the person I'm becoming.
         </p>
     </div>
 
-    <div class="about-grid">
+    <!-- PERSONAL INTRODUCTION -->
+    <div class="about-story">
+        <div class="story-number">01 / MY STORY</div>
 
-        <!-- Personal Introduction -->
-        <div class="about-card about-intro">
-            <span class="about-number">01 / ABOUT</span>
-            <h3>Curious mind.<br>Creative spirit.</h3>
+        <div class="story-content">
+            <h3>Quiet at first.<br>Curious by nature.</h3>
+
             <p>
-                I'm an Information Technology student with an interest
-                in web development and digital technology. I enjoy
-                discovering new things, learning through experience,
-                and creating projects that turn ideas into something useful.
+                I may seem quiet and reserved at first, but there's
+                a lot more to discover once you get to know me.
+                I'm naturally curious, eager to learn, and someone
+                who hopes to become more independent and explore
+                more of what life has to offer.
+            </p>
+
+            <p>
+                My journey in Information Technology started in
+                high school, when I chose Computer Systems Servicing
+                in Grade 9 and ICT in Senior High School. Those
+                experiences eventually led me to pursue a Bachelor
+                of Science in Information Technology. Psychology
+                was also one of my interests, and it remains a field
+                I find fascinating.
             </p>
         </div>
+    </div>
 
-        <!-- Education -->
-        <div class="about-card education-card">
-            <span class="about-number">02 / EDUCATION</span>
-            <h3>My academic journey.</h3>
+    <!-- EDUCATION -->
+    <div class="about-education">
+        <div class="story-number">02 / EDUCATION</div>
 
-            <div class="education-details">
-                <div class="education-dot"></div>
-                <div>
-                    <span class="education-status">CURRENTLY STUDYING</span>
-                    <h4>Bachelor of Science in Information Technology</h4>
-                    <p>Your School / College Name</p>
-                    <span class="education-year">Your Academic Year</span>
-                </div>
+        <div class="education-details">
+            <div class="education-dot"></div>
+
+            <div>
+                <span class="education-status">MY ACADEMIC JOURNEY</span>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p>ACLC College of Daet</p>
+                <span class="education-year">2023 – Present</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEYOND THE SCREEN -->
+    <div class="beyond-screen">
+        <div class="story-number">03 / BEYOND THE SCREEN</div>
+
+        <h3>Little things that make me, me.</h3>
+
+        <div class="interest-grid">
+
+            <div class="interest-card">
+                <span class="interest-icon">✦</span>
+                <h4>Movie Enthusiast</h4>
+                <p>Thriller and psychological films always have my attention.</p>
+            </div>
+
+            <div class="interest-card">
+                <span class="interest-icon">⌑</span>
+                <h4>Book Lover</h4>
+                <p>Finding time to enjoy a good book.</p>
+            </div>
+
+            <div class="interest-card">
+                <span class="interest-icon">♡</span>
+                <h4>Family Matters</h4>
+                <p>Nothing beats spending quality time with my family.</p>
+            </div>
+
+            <div class="interest-card">
+                <span class="interest-icon">↗</span>
+                <h4>Curious Explorer</h4>
+                <p>Always looking forward to new experiences and possibilities.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FUTURE GOALS -->
+    <div class="looking-ahead">
+        <div class="story-number">04 / LOOKING AHEAD</div>
+
+        <h3>My path is still unfolding.</h3>
+
+        <p>
+            I'm open to different opportunities where I can continue
+            learning, grow more independently, and discover meaningful
+            work that aligns with my interests and strengths. I may not
+            have everything figured out yet, but I'm excited about the
+            possibilities ahead and the experiences that will help me
+            find my path.
+        </p>
+
+        <span class="closing-note">
+            Still figuring things out, and that's part of my journey.
+        </span>
+    </div>
+
+</section>
+
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="skills-section">
+
+    <div class="skills-heading">
+        <p class="section-label">WHAT I'VE BEEN LEARNING</p>
+        <h2>My skills & <span>toolkit.</span></h2>
+        <p>
+            Technologies and tools I've explored throughout
+            my journey as an Information Technology student.
+        </p>
+    </div>
+
+    <div class="skills-grid">
+
+        <!-- FRONTEND CARD -->
+        <div class="skill-card frontend-card">
+            <span class="skill-number">01 / FRONTEND</span>
+            <h3>Building the interface.</h3>
+            <p>Creating and styling web pages.</p>
+
+            <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+
+        <!-- BACKEND CARD -->
+        <div class="skill-card backend-card">
+            <span class="skill-number">02 / BACKEND</span>
+            <h3>Making things work.</h3>
+            <p>Practicing server-side programming and application logic.</p>
+
+            <div class="skill-tags">
+                <span>PHP</span>
+            </div>
+        </div>
+
+        <!-- DATABASE CARD -->
+        <div class="skill-card database-card">
+            <span class="skill-number">03 / DATABASE</span>
+            <h3>Working with data.</h3>
+            <p>Learning how applications store and manage information.</p>
+
+            <div class="skill-tags">
+                <span>MySQL</span>
+            </div>
+        </div>
+
+        <!-- TOOLS CARD -->
+        <div class="skill-card tools-card">
+            <span class="skill-number">04 / DEVELOPMENT TOOLS</span>
+            <h3>Tools I work with.</h3>
+            <p>Tools that support my coding and development process.</p>
+
+            <div class="skill-tags">
+                <span>VS Code</span>
+                <span>GitHub</span>
+                <span>XAMPP</span>
             </div>
         </div>
 
@@ -123,8 +273,222 @@
 
 </section>
 
-        <!-- Other sections will be added step by step -->
+
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects-section">
+
+    <div class="projects-heading">
+        <p class="section-label">A FEW THINGS I'VE CREATED</p>
+
+        <h2>Ideas turned into <span>projects.</span></h2>
+
+        <p class="projects-subtitle">
+            A collection of applications, games, and creative work
+            I've developed throughout my learning journey.
+        </p>
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- PROJECT 2: PERSONAL WEBSITE -->
+<article class="project-card personal-website-project">
+
+    <div class="project-image">
+        <img src="images/personal-website.png"
+             alt="Personal One-Page Website screenshot"
+             class="gallery-image"
+             onclick="openImage(this)">
+    </div>
+
+    <div class="project-info">
+        <span class="project-category">02 / WEB DESIGN</span>
+
+        <h3>Personal One-Page Website</h3>
+
+        <p>
+            An early web development project created during
+            my first year, introducing me to website structure
+            and visual design.
+        </p>
+
+        <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+        </div>
+    </div>
+
+</article>
+
+
+        <!-- PROJECT 2: SMARTDESK -->
+        <article class="project-card smartdesk-project">
+
+            <div class="project-gallery smartdesk-gallery">
+
+                <img src="images/smartdesk-login.png"
+                     alt="SmartDesk login page"
+                     class="gallery-image"
+                     onclick="openImage(this)">
+
+                <img src="images/smartdesk-technician.png"
+                     alt="SmartDesk technician dashboard"
+                     class="gallery-image"
+                     onclick="openImage(this)">
+
+                <img src="images/smartdesk-requester.png"
+                     alt="SmartDesk requester dashboard"
+                     class="gallery-image"
+                     onclick="openImage(this)">
+
+                <img src="images/smartdesk-admin.png"
+                     alt="SmartDesk administrator dashboard"
+                     class="gallery-image"
+                     onclick="openImage(this)">
+
+                <img src="images/smartdesk-tickets.png"
+                     alt="SmartDesk ticket management"
+                     class="gallery-image"
+                     onclick="openImage(this)">
+
+            </div>
+
+            <div class="project-info">
+
+                <span class="project-category">
+                    01 / WEB APPLICATION DEVELOPMENT
+                </span>
+
+                <h3>SmartDesk</h3>
+
+                <p>
+                    A web-based IT service desk and ticket management
+                    system featuring requester, technician, and
+                    administrator accounts. It supports ticket
+                    submission, assignment, status monitoring,
+                    user management, and analytics.
+                </p>
+
+                <div class="project-tags">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>HTML & CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- PROJECT 3: HISS-TEERIA -->
+        <article class="project-card snake-project">
+
+            <div class="project-gallery">
+
+                <img src="images/snake-gameplay.png"
+                     alt="Hiss-Teeria gameplay"
+                     class="gallery-image"
+                     onclick="openImage(this)">
+
+                <img src="images/snake-menu.png"
+                     alt="Hiss-Teeria game menu"
+                     class="gallery-image"
+                     onclick="openImage(this)">
+
+                <img src="images/hiss-teeria.png"
+                     alt="Hiss-Teeria title screen"
+                     class="gallery-image"
+                     onclick="openImage(this)">
+
+            </div>
+
+            <div class="project-info">
+
+                <span class="project-category">
+                    03 / GAME DEVELOPMENT
+                </span>
+
+                <h3>Hiss-Teeria</h3>
+
+                <p>
+                    A colorful snake-themed game developed using Scratch,
+                    featuring interactive gameplay, a scoring system,
+                    and custom-designed visuals.
+                </p>
+
+                <div class="project-tags">
+                    <span>Scratch</span>
+                    <span>Game Design</span>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- PROJECT 5: MULTIMEDIA ACTIVITIES -->
+        <article class="project-card multimedia-project">
+
+            <div class="multimedia-gallery">
+
+                <!-- TOP ROW -->
+                <img src="images/movie-poster.jpeg"
+                     alt="Movie poster design"
+                     onclick="openImage(this)">
+
+                <img src="images/text-portrait.jpg"
+                     alt="Typography portrait design"
+                     onclick="openImage(this)">
+
+                <img src="images/personal-moodboard.jpeg"
+                     alt="Personal mood board"
+                     onclick="openImage(this)">
+
+                <img src="images/filipino-culture-collage.jpeg"
+                     alt="Filipino culture collage"
+                     onclick="openImage(this)">
+
+                <!-- BOTTOM ROW -->
+                <img src="images/cityscape-design.jpeg"
+                     alt="Cityscape digital design"
+                     onclick="openImage(this)">
+
+                <img src="images/four-pics.jpeg"
+                     alt="Multimedia classroom activity"
+                     onclick="openImage(this)">
+
+                <img src="images/cucumber-typography.jpg"
+                     alt="Cucumber typography design"
+                     onclick="openImage(this)">
+
+            </div>
+
+            <div class="project-info">
+
+                <span class="project-category">
+                    05 / MULTIMEDIA DESIGN
+                </span>
+
+                <h3>Creative Multimedia Works</h3>
+
+                <p>
+                    A collection of creative multimedia activities using
+                    Adobe Photoshop, showcasing photo manipulation,
+                    typography, digital composition, and graphic design.
+                </p>
+
+                <div class="project-tags">
+                    <span>Adobe Photoshop</span>
+                    <span>Graphic Design</span>
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+</section>
 
     <script src="script.js"></script>
+
 </body>
 </html>

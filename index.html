@@ -6,13 +6,17 @@
     <title>Hana | Creative Developer</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME ICONS -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
+<!-- IMAGE LIGHTBOX -->
 <div class="image-lightbox" id="imageLightbox"
      onclick="closeImage()">
-
     <span class="lightbox-close">&times;</span>
-
     <img id="lightboxImage" src="" alt="Expanded project screenshot">
 </div>
 
@@ -21,6 +25,8 @@
     <span class="multimedia-close">&times;</span>
     <img id="multimediaLightboxImage" src="" alt="Expanded multimedia artwork">
 </div>
+
+<script src="script.js"></script>
 
 <body>
 
@@ -34,36 +40,33 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     
+
 <!-- HERO SECTION -->
 <section id="home" class="hero">
 
-    <!-- Oversized name behind the portrait -->
-    
+    <!-- OVERSIZED NAME BEHIND THE PORTRAIT -->
     <h1 class="hero-name">
-     <span class="name-first">Hannah</span>
-     <span class="name-last">Pajares</span>
+        <span class="name-first">Hannah</span>
+        <span class="name-last">Pajares</span>
     </h1>
 
-
-    <!-- Decorative circles -->
+    <!-- DECORATIVE CIRCLES -->
     <div class="hero-orbit"></div>
 
-    <!-- Artistic portrait -->
+    <!-- CENTER PORTRAIT -->
     <div class="hero-portrait">
-        
-<img src="images/profile-cutout.png"
-     alt="Illustrated portrait of Hannah Marie Pajares">
-
-
+        <img src="images/profile-cutout.png"
+             alt="Illustrated portrait of Hannah Marie Pajares">
     </div>
 
-    <!-- Introduction on the lower left -->
+    <!-- LEFT INTRODUCTION -->
     <div class="hero-left">
         <p class="hero-label">
             BSIT STUDENT · ASPIRING WEB DEVELOPER
@@ -75,9 +78,14 @@
         </p>
     </div>
 
-    <!-- Headline and contact button on the lower right -->
+    <!-- RIGHT HEADLINE -->
     <div class="hero-right">
-        <h2>Learning.<br>Building.<br>Growing.</h2>
+
+        <h2>
+            Learning.<br>
+            Building.<br>
+            Growing.
+        </h2>
 
         <p>
             Exploring technology and creating useful
@@ -85,12 +93,16 @@
         </p>
 
         <a href="#contact" class="hero-contact">
-            Let's Talk <span>↗</span>
+            Let's Talk
+            <span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </span>
         </a>
+
     </div>
 
-
 </section>
+
 
 <!-- ABOUT SECTION -->
 
@@ -107,10 +119,27 @@
     </div>
 
     <!-- PERSONAL INTRODUCTION -->
-    <div class="about-story">
-        <div class="story-number">01 / MY STORY</div>
+    
+<div class="about-story">
 
-        <div class="story-content">
+    <!-- DECORATIVE STORY INTRO -->
+    <div class="story-visual">
+
+        <span class="story-number">01 / MY STORY</span>
+
+        <div class="story-art"></div>
+
+        <p class="story-quote">
+    "Learning something new,
+    <span>one experience at a time."</span>
+</p>
+
+        <span class="story-caption">A LITTLE PIECE OF ME</span>
+
+    </div>
+
+    <div class="story-content">
+
             <h3>Quiet at first.<br>Curious by nature.</h3>
 
             <p>
@@ -488,7 +517,191 @@
     </div>
 </section>
 
+
+<!-- ACHIEVEMENTS SECTION -->
+<section id="achievements" class="achievements-section">
+    <div class="section-heading">
+        <p class="section-subtitle">MY JOURNEY SO FAR</p>
+        <h2>Achievements & Learning Goals</h2>
+        <p>
+            Celebrating milestones and continuously working
+            toward becoming a better version of myself.
+        </p>
+    </div>
+
+    <div class="achievement-card">
+        <div class="achievement-icon">
+            <i class="fas fa-award"></i>
+        </div>
+
+        <div class="achievement-content">
+            <span class="achievement-label">ACADEMIC ACHIEVEMENT</span>
+
+            <h3>Consistent Dean's Lister</h3>
+
+            <p class="achievement-period">
+                Since 2nd Year College
+            </p>
+
+            <p class="achievement-description">
+                Recognized as a Dean's Lister every semester
+                since my second year in college, earning four
+                certificates in recognition of my consistent
+                academic performance, dedication, and commitment
+                to learning.
+            </p>
+
+            <div class="achievement-count">
+                <strong>4</strong>
+                <span>Certificates Earned</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CERTIFICATE GALLERY -->
+    <div class="certificate-gallery">
+        <div class="certificate-placeholder">
+            <i class="fas fa-certificate"></i>
+            <p>Certificate 1</p>
+        </div>
+
+        <div class="certificate-placeholder">
+            <i class="fas fa-certificate"></i>
+            <p>Certificate 2</p>
+        </div>
+
+        <div class="certificate-placeholder">
+            <i class="fas fa-certificate"></i>
+            <p>Certificate 3</p>
+        </div>
+
+        <div class="certificate-placeholder">
+            <i class="fas fa-certificate"></i>
+            <p>Certificate 4</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+
+    <div class="contact-heading">
+        <p class="contact-subtitle">LET'S CONNECT</p>
+
+        <h2>Get In Touch</h2>
+
+        <p>
+            Thank you for visiting my portfolio!
+            I'm always open to learning, connecting,
+            and exploring new opportunities.
+        </p>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- EMAIL -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pajaresmarie67@gmail.com"
+   class="contact-card"
+   target="_blank"
+   rel="noopener noreferrer">
+
+            <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="contact-info">
+                <h3>Email</h3>
+                <p>pajaresmarie67@gmail.com</p>
+                <span>Send me an email</span>
+            </div>
+
+            <i class="fas fa-arrow-up-right-from-square contact-arrow"></i>
+        </a>
+
+        <!-- GITHUB -->
+        <a href="https://github.com/hanniehae08"
+           class="contact-card"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="contact-icon">
+                <i class="fab fa-github"></i>
+            </div>
+
+            <div class="contact-info">
+                <h3>GitHub</h3>
+                <p>github.com/hanniehae08</p>
+                <span>Explore my projects</span>
+            </div>
+
+            <i class="fas fa-arrow-up-right-from-square contact-arrow"></i>
+        </a>
+
+    </div>
+
+    <div class="contact-message">
+        <h3>Let's learn, build, and grow together.</h3>
+        <p>I'm looking forward to what comes next!</p>
+    </div>
+
+</section>
+
     <script src="script.js"></script>
+
+
+<!-- FOOTER SECTION -->
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <a href="#home" class="footer-logo">
+                HANA<span>.</span>
+            </a>
+
+            <p>
+                Learning. Building. Growing.
+                One step at a time.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-connect">
+            <h3>Let's Connect</h3>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pajaresmarie67@gmail.com"
+               target="_blank"
+               rel="noopener noreferrer">
+                Email Me
+            </a>
+
+            <a href="https://github.com/hanniehae08"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub Profile
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Hana Pajares. All rights reserved.</p>
+        <a href="#home">Back to top ↑</a>
+    </div>
+
+</footer>
+
 
 </body>
 </html>
